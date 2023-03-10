@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicInstrumentsMenu">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="774dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSoundOfOwl"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of guitar" />
+
+            <Button
+                android:id="@+id/buttonSoundOfTitmouse"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of drums" />
+
+            <Button
+                android:id="@+id/buttonSoundOfBullfinch"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of violin" />
+
+            <Button
+                android:id="@+id/buttonSoundOfСock"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of piano" />
+
+            <Button
+                android:id="@+id/buttonSoundOfFox"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of bass guitar" />
+
+            <Button
+                android:id="@+id/buttonSoundOfSpecial"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sound of special" />
+
+            <Button
+                android:id="@+id/buttonCart"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Cart" />
+
+            <Button
+                android:id="@+id/buttonBackToMainMenu"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="83dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="cursive"
+        android:text="Voice Shop"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

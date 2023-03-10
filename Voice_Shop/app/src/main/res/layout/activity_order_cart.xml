@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderCart">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="239dp"
+        android:layout_height="83dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="cursive"
+        android:text="Voice Shop"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/orders_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerOceanWaves"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="396dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Enter your email address"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orders_list" />
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="181dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="10dp"
+        android:text="Buy"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackToMainMenuFromOrderCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <Button
+        android:id="@+id/buttonBackToMainMenuFromOrderCart"
+        android:layout_width="181dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="115dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuy" />
+
+    <ListView
+        android:id="@+id/orders_list"
+        android:layout_width="411dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

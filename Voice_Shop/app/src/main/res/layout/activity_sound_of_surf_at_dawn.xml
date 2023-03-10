@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoundOfSurfAtDawn">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="239dp"
+        android:layout_height="83dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="86dp"
+        android:fontFamily="cursive"
+        android:text="Voice Shop"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="760dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewAuthor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/surf_at_dawn" />
+
+            <TextView
+                android:id="@+id/textViewAuthor"
+                android:layout_width="195dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="108dp"
+                android:text="Author: Evanilla"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textViewSound"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="55dp"
+                android:text="Sound: Surf in the morning"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="137dp"
+                android:layout_marginTop="8dp"
+                android:text="Price: 20 P"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSound" />
+
+            <Button
+                android:id="@+id/buttonPlay"
+                android:layout_width="153dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="129dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="129dp"
+                android:text="Play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+
+            <Button
+                android:id="@+id/buttonAddToPurchase"
+                android:layout_width="278dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="67dp"
+                android:text="Add to purchase"
+                app:layout_constraintBottom_toTopOf="@+id/buttonBackToWaterMenu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonPlay" />
+
+            <Button
+                android:id="@+id/buttonBackToWaterMenu"
+                android:layout_width="208dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="102dp"
+                android:text="Back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAddToPurchase" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

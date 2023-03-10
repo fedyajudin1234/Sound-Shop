@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "962015639831",
+    "project_id": "voice-shop-bff57",
+    "storage_bucket": "voice-shop-bff57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962015639831:android:de981dbd6e0af7415bdf52",
+        "android_client_info": {
+          "package_name": "com.example.voice_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962015639831-6ate2qq50hkeu576q34n2pe1hi3pe40c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.voice_shop",
+            "certificate_hash": "ccc61176395ef37a3cf91036690a9e6386d8d58d"
+          }
+        },
+        {
+          "client_id": "962015639831-huja6gvpggrm191ge38rnchd98dntkm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhaQI5Tw37OQIsuFfs034HkoWE9uaQz0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962015639831-huja6gvpggrm191ge38rnchd98dntkm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
